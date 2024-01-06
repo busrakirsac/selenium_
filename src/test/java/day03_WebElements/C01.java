@@ -30,5 +30,6 @@ public class C01 {
 
         //Sayfayi kapatiniz
         driver.quit();
+
     }
 }
