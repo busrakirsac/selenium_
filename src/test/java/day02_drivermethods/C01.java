@@ -10,7 +10,19 @@ public class C01 {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.get("https://amazon.com");
+
+        String url = "https://amazon.com";
+        driver.get(url);
+
+        //sayfa basligi
+        String actualTitle = driver.getTitle();
+        System.out.println("actualTitle = " + actualTitle);
+
+        //sayfa url'i
+        String actualUrl = driver.getCurrentUrl();
+        System.out.println("actualUrl = " + actualUrl);
+
+        driver.quit();
 
 
     }
